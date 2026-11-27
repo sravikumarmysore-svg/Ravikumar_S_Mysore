@@ -1,31 +1,18 @@
-# Ravi Kumar S. — Online Portfolio
+# Ravi Kumar S. — GitHub Pages Portfolio
 
-A responsive, single-page professional portfolio for GitHub Pages.
+## Files to upload to your GitHub repository root
+- `index.html` — portfolio webpage
+- `Ravi_Kumar_S_ZEISS_Planning_Lead_Resume.pdf` — downloadable résumé
+- `profile.jpg` — your professional photograph (to be supplied and added)
 
-## Publish on GitHub Pages
+## Publish / update
+1. Open https://github.com/sravikumarmysore-svg/Ravikumar_S_Mysore
+2. Choose **Add file → Upload files** (or the `uploading an existing file` link if the repository is empty).
+3. Upload the three files listed above to the repository root.
+4. Click **Commit changes**.
+5. Ensure **Settings → Pages** uses branch `main` and folder `/(root)`.
 
-1. Sign in to https://github.com/ or create a free account.
-2. Create a **new public repository** named exactly `YOUR-GITHUB-USERNAME.github.io`.
-   - Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
-   - Example: username `ravikumar-s` → repository `ravikumar-s.github.io`.
-3. Upload `index.html` from this folder to the repository root.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select branch **main** and folder **/(root)**, then click **Save**.
-7. Wait for the Pages deployment to finish. Your URL will be:
-   `https://YOUR-GITHUB-USERNAME.github.io/`
+The live site will be https://sravikumarmysore-svg.github.io/Ravikumar_S_Mysore/
 
-## Before publishing
-
-- Confirm the phone number, email, LinkedIn URL and employment dates.
-- Review the achievement figures and retain only figures you can confidently explain in an interview.
-- Add a PDF résumé to the repository if you want a visible résumé download link. Then add a link in `index.html`.
-- Avoid uploading confidential employer, customer, supplier or programme information.
-
-## Updating the site
-
-Edit `index.html` in GitHub using the pencil icon, then commit the change. GitHub Pages republishes the site automatically.
-
-## Important
-
-The exact public URL cannot be reserved or activated until you choose/create your GitHub username and publish the repository.
+## Important review note
+The résumé source used here currently states **10+ years** in aerospace, while the portfolio introduction states **9+ years**. Confirm the preferred figure and align both before publishing.

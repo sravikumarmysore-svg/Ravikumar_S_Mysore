@@ -15,6 +15,7 @@
     h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;margin:12px 0}
     header h2{font-size:clamp(1.1rem,2.5vw,1.55rem);font-weight:500;color:#d9e8f0;margin:0 0 18px}
     .intro{max-width:760px;color:#edf4f8;font-size:1.06rem}
+    .hero-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.profile-photo{width:156px;height:156px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,.8);background:#e7eef3;box-shadow:0 8px 24px rgba(0,0,0,.2)}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
     .btn{display:inline-block;padding:11px 18px;border-radius:7px;background:#fff;color:var(--navy);font-weight:700}
     .btn.outline{background:transparent;border:1px solid #b9d2df;color:#fff}
@@ -44,12 +45,17 @@
 <body>
 <header id="top">
   <div class="wrap">
-    <div class="eyebrow">Professional Portfolio</div>
+    <div class="hero-row">
+      <img class="profile-photo" src="profile.jpg" alt="Professional photograph of Ravi Kumar S." onerror="this.style.display='none'">
+      <div><div class="eyebrow">Professional Portfolio</div>
     <h1>Ravi Kumar S.</h1>
-    <h2>Production Planning & Control | Aerospace Manufacturing | Supply Chain | SAP S/4HANA</h2>
+    <h2>Production Planning & Control | Aerospace Manufacturing | Supply Chain | SAP S/4HANA</h2></div>
+    </div>
     <p class="intro">Manufacturing professional with 16+ years of overall experience, including 9+ years in aerospace. Focused on production planning, material availability, operational performance, process improvement and ERP-enabled manufacturing transformation.</p>
     <div class="actions">
-      <a class="btn" href="#contact">Contact</a>
+      <a class="btn" href="Ravi_Kumar_S_ZEISS_Planning_Lead_Resume.pdf" target="_blank" rel="noopener">Download PDF Resume</a>
+      <a class="btn outline" href="https://docs.google.com/document/d/1np3hQvXx_bkqiTauw7m9YT7KX_G30lXp/edit" target="_blank" rel="noopener">View Professional Profile</a>
+      <a class="btn outline" href="#contact">Contact</a>
       <a class="btn outline" href="https://www.linkedin.com/in/ravi-kumar-s-97834185/" target="_blank" rel="noopener">LinkedIn Profile</a>
     </div>
   </div>
@@ -68,9 +74,9 @@
     <h3>Selected Business Impact</h3>
     <div class="grid">
       <div class="metric"><strong>+20%</strong><span>On-time delivery improvement</span></div>
-      <div class="metric"><strong>275 → 180</strong><span>Production Material Days inventory outstanding (DIO) improvement</span></div>
+      <div class="metric"><strong>275 → 180</strong><span>Days inventory outstanding (DIO) improvement</span></div>
       <div class="metric"><strong>25%</strong><span>Inventory reduction through classification and control</span></div>
-      <div class="metric"><strong>365 → 280</strong><span>FAIR Material Days inventory outstanding (DIO) improvement</span></div>
+      <div class="metric"><strong>365 → 280</strong><span>FAIR cycle-time improvement (days)</span></div>
     </div>
     <p class="muted" style="font-size:.88rem;margin-top:14px">Figures are based on achievements supplied for this portfolio. Add the measurement period and supporting context before using them in a formal case study.</p>
   </section>
@@ -90,6 +96,7 @@
       <ul>
         <li>Supporting business data analysis and management dashboards to improve visibility of production performance and delivery priorities.</li>
         <li>Driving coordination for the SAP S/4HANA implementation team, aligning business requirements, process inputs and stakeholder actions.</li>
+        <li>Working across planning and operational teams to support timely decisions and minimise delivery disruption.</li>
       </ul>
     </div>
     <div class="role">
@@ -115,7 +122,7 @@
   </section>
 
   <section id="projects">
-    <h3>Acheivements and Continious Improvement</h3>
+    <h3>Selected Projects & Process Work</h3>
     <div class="role">
       <h4>SAP S/4HANA Implementation — Business Process & Data Coordination</h4>
       <p>Supporting the implementation journey through process-flow collection, AS-IS / TO-BE documentation inputs, Fit-to-Standard discussions, stakeholder coordination and business readiness activities. Functional areas include PP, MM, QM, PM, Project System and FICO workstreams.</p>
