@@ -2,7 +2,7 @@
 
 ## Files to upload to your GitHub repository root
 - `index.html` — portfolio webpage
-- `Ravi_Kumar_S_ZEISS_Planning_Lead_Resume.pdf` — downloadable résumé
+- `Ravi_Kumar_S_Profile.pdf` — downloadable résumé
 - `profile.jpg` — your professional photograph (to be supplied and added)
 
 ## Publish / update
