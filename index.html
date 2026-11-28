@@ -15,7 +15,29 @@
     h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;margin:12px 0}
     header h2{font-size:clamp(1.1rem,2.5vw,1.55rem);font-weight:500;color:#d9e8f0;margin:0 0 18px}
     .intro{max-width:760px;color:#edf4f8;font-size:1.06rem}
-    .hero-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.profile-photo{width:156px;height:156px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,.8);background:#e7eef3;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+    
+/* Arrange photograph and details horizontally */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+/* Regular rectangular professional photograph */
+.profile-photo img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px; /* Removes circular appearance */
+    display: block;
+}
+
+/* Professional details on the right */
+.profile-details {
+    flex: 1;
+}
+    
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
     .btn{display:inline-block;padding:11px 18px;border-radius:7px;background:#fff;color:var(--navy);font-weight:700}
     .btn.outline{background:transparent;border:1px solid #b9d2df;color:#fff}
