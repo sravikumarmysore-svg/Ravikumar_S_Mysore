@@ -1,0 +1,375 @@
+/* =========================================
+   1. THEME VARIABLES & GLOBAL BASE
+   ========================================= */
+:root {
+  --navy: #10263d;
+  --blue: #176b87;
+  --ink: #1d2935;
+  --muted: #5d6b78;
+  --paper: #f4f7fa;
+  --line: #dce4eb;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.65 Inter, Segoe UI, Arial, sans-serif;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* =========================================
+   2. HEADER & PROFILE HERO
+   ========================================= */
+header {
+  background: linear-gradient(125deg, #10263d, #174c68);
+  color: white;
+  padding: 64px 0 54px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: block;
+  flex-shrink: 0;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.eyebrow {
+  font-size: .78rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: #a9d8e6;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  line-height: 1.05;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+  font-weight: 500;
+  color: #d9e8f0;
+  margin: 0 0 16px;
+}
+
+.intro {
+  max-width: 760px;
+  color: #edf4f8;
+  font-size: 1.03rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 7px;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #b9d2df;
+  color: #fff;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+/* =========================================
+   3. STICKY NAVIGATION BAR
+   ========================================= */
+nav {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav .wrap {
+  display: flex;
+  gap: 22px;
+  overflow: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  white-space: nowrap;
+}
+
+nav a {
+  font-size: .9rem;
+  font-weight: 650;
+  color: var(--navy);
+}
+
+/* =========================================
+   4. SHARED SECTIONS, CARDS & TYPOGRAPHY
+   ========================================= */
+main {
+  padding: 34px 0 60px;
+}
+
+section {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 28px;
+  margin: 0 0 22px;
+  box-shadow: 0 5px 18px rgba(16, 38, 61, .035);
+  scroll-margin-top: 64px;
+}
+
+h3 {
+  color: var(--navy);
+  font-size: 1.45rem;
+  margin: 0 0 16px;
+}
+
+h4 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+p {
+  margin: 8px 0;
+  color: #344250;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+ul {
+  padding-left: 21px;
+  margin: 9px 0;
+  color: #344250;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* =========================================
+   5. ACHIEVEMENTS & IMPACT METRICS
+   ========================================= */
+.metric {
+  background: #f0f6f9;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.metric strong {
+  display: block;
+  color: var(--blue);
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.metric span {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* =========================================
+   6. CORE EXPERTISE CHIPS
+   ========================================= */
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #edf4f7;
+  color: #20465b;
+  border-radius: 30px;
+  padding: 6px 11px;
+  font-size: .88rem;
+}
+
+/* =========================================
+   7. CAREER JOURNEY & PROJECTS
+   ========================================= */
+.role {
+  border-left: 3px solid #83bacb;
+  padding: 2px 0 4px 17px;
+  margin: 18px 0;
+}
+
+.role .date {
+  font-size: .88rem;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+/* =========================================
+   8. EDUCATION SECTION
+   ========================================= */
+#education .edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#education .edu-item {
+  background: #f8fbfd;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 16px;
+}
+
+#education .edu-degree {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+#education .edu-institute {
+  margin: 0;
+  color: #344250;
+  font-size: .95rem;
+}
+
+#education .edu-meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+/* =========================================
+   9. CERTIFICATIONS & SPECIALIZED TRAINING
+   ========================================= */
+#certifications .cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#certifications .cert-item {
+  background: #f8fbfd;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 16px;
+}
+
+#certifications .cert-title {
+  margin: 0 0 6px;
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+#certifications .cert-detail {
+  margin: 0;
+  color: #344250;
+  font-size: .93rem;
+}
+
+/* =========================================
+   10. CONTACT CALLOUT & FOOTER
+   ========================================= */
+.callout {
+  background: #f0f6f9;
+  border-radius: 9px;
+  padding: 16px;
+}
+
+footer {
+  background: var(--navy);
+  color: #dbe7ed;
+  padding: 28px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #dbe7ed;
+}
+
+/* =========================================
+   11. MOBILE RESPONSIVE ADJUSTMENTS
+   ========================================= */
+@media (max-width: 650px) {
+  header {
+    padding: 48px 0 40px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .grid,
+  #education .edu-grid,
+  #certifications .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 21px;
+  }
+
+  .wrap {
+    padding: 0 16px;
+  }
+}
