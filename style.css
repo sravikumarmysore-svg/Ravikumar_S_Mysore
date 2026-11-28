@@ -373,3 +373,129 @@ footer p {
     padding: 0 16px;
   }
 }
+
+/* =========================================
+   12. PRINT / SAVE AS PDF STYLES
+   ========================================= */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 15mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  /* Hide web-only navigation, action buttons, and footer */
+  nav,
+  .actions,
+  footer {
+    display: none !important;
+  }
+
+  .wrap {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Convert dark gradient header to clean white executive banner */
+  header {
+    background: #fff !important;
+    color: var(--navy) !important;
+    padding: 0 0 14px;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .profile-section {
+    gap: 20px;
+  }
+
+  .profile-photo {
+    width: 110px;
+    height: 135px;
+    border: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    color: var(--blue);
+  }
+
+  h1 {
+    font-size: 24pt;
+    color: var(--navy);
+    margin: 4px 0;
+  }
+
+  header h2 {
+    font-size: 12pt;
+    color: #2c3e50;
+    margin: 0 0 8px;
+  }
+
+  .intro {
+    color: #222;
+    font-size: 10.5pt;
+    max-width: 100%;
+  }
+
+  /* Clean flat cards with no shadows */
+  main {
+    padding: 0;
+  }
+
+  section {
+    box-shadow: none;
+    border: 1px solid #d0d9e0;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 13pt;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #e5ecf1;
+    padding-bottom: 4px;
+  }
+
+  /* Keep individual blocks together across page breaks */
+  .role,
+  .metric,
+  .edu-item,
+  .cert-item,
+  .callout {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .metric {
+    border: 1px solid #d0d9e0;
+    padding: 10px 12px;
+  }
+
+  .metric strong {
+    font-size: 14pt;
+  }
+
+  .chip {
+    border: 1px solid #c5d5df;
+    padding: 3px 8px;
+    font-size: 9pt;
+  }
+
+  a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+}
+
