@@ -499,3 +499,70 @@ footer p {
   }
 }
 
+
+/* Print / Save as PDF Button */
+.btn-print {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-print:hover {
+  background-color: #172554;
+  border-color: #172554;
+}
+
+.btn-print:active {
+  transform: translateY(1px);
+}
+
+/* Clean PDF / Print Layout */
+@media print {
+  /* Hide navigation, buttons, and footer in PDF */
+  nav,
+  .navbar,
+  .hero-actions,
+  .btn,
+  .btn-print,
+  footer {
+    display: none !important;
+  }
+
+  /* Reset background and margins for crisp A4/Letter output */
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Prevent cards and timeline items from splitting mid-box across pages */
+  section,
+  .card,
+  .impact-card,
+  .timeline-item,
+  .project-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+    border-color: #d1d5db !important;
+  }
+
+  /* Ensure links look clean on paper/PDF */
+  a {
+    color: #111827 !important;
+    text-decoration: none !important;
+  }
+}
